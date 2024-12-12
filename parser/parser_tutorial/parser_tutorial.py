@@ -27,7 +27,8 @@ parser.add_argument('-g','--usegpu',help='whether to use gpu',
 # Parse_args() method return the args
 args = parser.parse_args() # 调用 parse_args() 方法解析命令行参数，并将解析结果返回给 args 对象中。
 
-print(f"Running '{__file__}'")
+print(f"Running '{__file__}'") # Running 'parser_tutorial.py'
+print(f"Running '{__name__}'") # Running '__main__' 以主函数直接运行的都叫 __main__
 
 print(args.echo)
 

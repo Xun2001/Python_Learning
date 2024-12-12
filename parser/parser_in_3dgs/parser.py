@@ -1,5 +1,5 @@
 import argparse
-
+from arguments import ModelParams, PipelineParams, OptimizationParams
 
 
 if __name__ == "__main__":
@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     # 解析命令行参数
     args = parser.parse_args()
-
+    print(args)
     print(f"Model name: {args.model_name}")
     print(f"Learning rate: {args.learning_rate}")
     print(f"Number of steps: {args.num_steps}")
